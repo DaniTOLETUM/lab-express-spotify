@@ -73,6 +73,9 @@ app.get('/albums/:artistId', (req, res, next) => {
 
 //To get the tracks page when click on view tracks button
 app.get('/tracks/:albumId', (req, res, next) => {
+  //const {albumId} = req.params
+  //  spotifyApi.getAlbumTracks(albumId)
+  //
   spotifyApi.getAlbumTracks(req.params.albumId)
     .then(tracks => {
       // res.json(tracks)
