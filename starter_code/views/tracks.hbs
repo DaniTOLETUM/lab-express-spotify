@@ -1,6 +1,7 @@
 <div id="tracks-container">
   <div class="tracks-name">
     <h2>Title</h2>
+    {{!-- <iframe src="https://open.spotify.com/embed/album/{{this.preview_url}}" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> --}}
     {{#each tracks.body.items}}
       {{this.name}}
       <audio src="{{this.preview_url}}" controls></audio>
